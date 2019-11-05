@@ -1,0 +1,23 @@
+uuid: b9a6a905-60cd-4935-8d7e-22471000a3df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_free
+    - node.type.event
+id: node.event.field_free
+field_name: field_free
+entity_type: node
+bundle: event
+label: Free
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Free
+  off_label: Paid
+field_type: boolean

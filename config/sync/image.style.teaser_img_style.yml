@@ -1,0 +1,20 @@
+uuid: c0db6f4a-1bce-4d46-97a1-f8d2fbdc8650
+langcode: en
+status: true
+dependencies: {  }
+name: teaser_img_style
+label: 'Custom teaser img'
+effects:
+  0b626991-f654-49d2-aaa4-fb4d5af52f5b:
+    uuid: 0b626991-f654-49d2-aaa4-fb4d5af52f5b
+    id: image_desaturate
+    weight: 1
+    data: {  }
+  ddecc92b-e815-409d-b9b4-01d9cb421c7d:
+    uuid: ddecc92b-e815-409d-b9b4-01d9cb421c7d
+    id: image_crop
+    weight: 2
+    data:
+      width: 350
+      height: 250
+      anchor: center-center

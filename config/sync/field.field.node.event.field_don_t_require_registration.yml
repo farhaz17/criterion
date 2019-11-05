@@ -1,0 +1,23 @@
+uuid: 7a29bcb3-703f-45f0-a660-1bb712b036d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_don_t_require_registration
+    - node.type.event
+id: node.event.field_don_t_require_registration
+field_name: field_don_t_require_registration
+entity_type: node
+bundle: event
+label: 'Don''t require registration'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Require Registration'
+  off_label: 'Dont Require Registration'
+field_type: boolean

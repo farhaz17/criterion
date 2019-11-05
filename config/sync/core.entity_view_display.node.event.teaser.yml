@@ -1,0 +1,59 @@
+uuid: 30f85aec-e1ad-4525-ae18-e0d5ea120cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_don_t_require_registration
+    - field.field.node.event.field_event_type
+    - field.field.node.event.field_free
+    - field.field.node.event.field_image
+    - field.field.node.event.field_price
+    - field.field.node.event.field_registration_form
+    - field.field.node.event.field_registration_link
+    - field.field.node.event.field_shoulder_text
+    - field.field.node.event.field_sponsor
+    - field.field.node.event.field_teaser_image
+    - field.field.node.event.field_topics
+    - field.field.node.event.field_venue
+    - image.style.teaser_img_style
+    - node.type.event
+  module:
+    - image
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_shoulder_text:
+    type: string
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_teaser_image:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: teaser_img_style
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_don_t_require_registration: true
+  field_event_type: true
+  field_free: true
+  field_image: true
+  field_price: true
+  field_registration_form: true
+  field_registration_link: true
+  field_sponsor: true
+  field_topics: true
+  field_venue: true
+  links: true

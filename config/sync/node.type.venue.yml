@@ -1,0 +1,18 @@
+uuid: aaf3d81d-feac-47d9-bff4-a6fd0784c1e7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Venue
+type: venue
+description: 'Event venue'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
